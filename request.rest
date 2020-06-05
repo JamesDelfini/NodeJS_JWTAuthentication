@@ -1,5 +1,5 @@
 GET http://localhost:5000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2ODk1NiwiZXhwIjoxNTkxMzY4OTg2fQ.tj6OBVr7ZPIZSPg7bzlDAxE9BTGDVCkJtSfNthMwih0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2OTM5MywiZXhwIjoxNTkxMzY5NDIzfQ.gTRZg7GqQTqBejxgI-Q_mFcGElROqr-xIQzPWrOe0s0
 
 ### 
 
@@ -7,7 +7,7 @@ POST http://localhost:6000/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2ODQ2M30.o-pzPwLTPuOUnNaBn5RCgX96F9dvR9pv3WKPK76RW0I"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2OTM0NX0.tsqbnlU5VUQ3L8UaW286r0kKBvBd17paQTgxKCj5_l8"
 }
 
 ###
@@ -17,4 +17,13 @@ Content-Type: application/json
 
 {
     "username": "Delfini"
+}
+
+### 
+
+DELETE http://localhost:6000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2OTM0NX0.tsqbnlU5VUQ3L8UaW286r0kKBvBd17paQTgxKCj5_l8"
 }
