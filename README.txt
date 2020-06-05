@@ -8,5 +8,18 @@
         # Install Nodemon
             > npm i --save-dev nodemon
 
-        # Commands
+        # Install REST Client in VSCode
+            To test the http request through VSCode for the file
+            of request.rest. You may use postman, if you wish to.
+
+    # Commands
+        # Run the project Express Server
             > npm run-script devStart
+
+        # Crypto to generate Tokens
+            > node
+                > require('crypto').randomBytes(64).toString('hex')
+    
+# Source
+    # JWT Authentication Tutorial - Node.js
+        > https://www.youtube.com/watch?v=mbsmsi7l3r4
