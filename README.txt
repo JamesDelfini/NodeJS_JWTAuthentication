@@ -15,8 +15,12 @@
     # Commands
         # Run the project Express Server
             > npm run-script devStart
+        
+        # Run the project Express Server Authentication
+            > npm run-script devStartAuth
 
         # Crypto to generate Tokens
+            Use this crypto command to generate .env tokens
             > node
                 > require('crypto').randomBytes(64).toString('hex')
     

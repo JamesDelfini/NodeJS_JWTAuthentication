@@ -1,10 +1,20 @@
 GET http://localhost:5000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmFtZXMiLCJpYXQiOjE1OTEzNjc0MzR9.RxYdc1rB1iePUMB_q6x7veCCtG09qdpDSb0aTtNO4zA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2ODk1NiwiZXhwIjoxNTkxMzY4OTg2fQ.tj6OBVr7ZPIZSPg7bzlDAxE9BTGDVCkJtSfNthMwih0
+
 ### 
 
-POST http://localhost:5000/login
+POST http://localhost:6000/token
 Content-Type: application/json
 
 {
-    "username": "James"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVsZmluaSIsImlhdCI6MTU5MTM2ODQ2M30.o-pzPwLTPuOUnNaBn5RCgX96F9dvR9pv3WKPK76RW0I"
+}
+
+###
+
+POST http://localhost:6000/login
+Content-Type: application/json
+
+{
+    "username": "Delfini"
 }
